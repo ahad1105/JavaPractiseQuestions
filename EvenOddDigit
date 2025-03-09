@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value: ");
+        int value = sc.nextInt();
+        
+        // First, we need to store the original value to maintain the number of digits
+        int originalValue = value;
+
+        // If the value is 0, print 0 directly
+        if (value == 0) {
+            System.out.println("Enter number greater than 0");
+        } else {
+            // Loop through each digit of the number
+            while (value > 0) {
+                int digit = value % 10;  // Get the last digit
+                
+                if(digit%2==0)
+                {
+                    System.out.println(+digit+ " is even digit");
+                }
+                else
+                {
+                    System.out.println(+digit+ " is odd digit");
+                }// Print the digit
+                value = value / 10;  // Remove the last digit
+            }
+        }
+    }
+}
