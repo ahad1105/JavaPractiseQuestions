@@ -1,0 +1,21 @@
+class Main {
+    public static void main(String[] args) {
+        int arr[] = {1,2,3,7,19};
+        int elem = 7;
+        boolean flag = true;
+        
+        for(int i=0;i<=arr.length-1;i++)
+        {
+            if(elem == arr[i])
+            {
+                System.out.println(+elem+ " is present in the array at " +i+ " position" );
+                flag = false;
+            }
+           
+        }
+        if(flag==true)
+        {
+            System.out.println("No such element found in array");
+        }
+    }
+}
