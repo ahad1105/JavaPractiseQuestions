@@ -1,0 +1,18 @@
+
+public class Main {
+    public static void main(String[] args) {
+        String name = "Ahad Khan is the goat bro";
+        
+        String[] words = name.split(" "); //convert string to array and stores words in array to traverse them 
+        int count = 0;
+        for(int i=words.length-1;i>=0;i--)
+        {
+            System.out.println(words[i]);
+            count++;
+        }
+        System.out.println("no of words in the string are " +count);
+        
+    }
+}
+
+
