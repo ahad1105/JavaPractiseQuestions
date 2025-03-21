@@ -1,0 +1,23 @@
+count occurences of a character
+
+
+
+class Main {
+    public static void main(String[] args) {
+       String str = "Ahad Khan";
+       char[] ch = str.toCharArray();
+       int count = 0;
+       
+       for(int i=0;i<=str.length()-1;i++)
+       {
+           if(ch[i] == 'h')
+           {
+           count++;
+           
+           }
+           
+       }
+       System.out.println("The number of occurences of a char is " +count);
+       
+    }
+}
