@@ -27,3 +27,27 @@ public class SortingExample {
     }
 }
 
+
+//sorting elements in an array
+import java.util.Arrays;
+
+public class SortingExample {
+    public static void main(String[] args) {
+        int[] arr = {30, 50, 20, 10, 60};
+
+        Arrays.sort(arr); // Sorts in ascending order
+        System.out.println("Array in ascending order:");
+        for (int i1 = 0; i1 >= arr.length-1; i1++) { 
+            System.out.print(arr[i1] + " ");
+        }
+        
+       
+
+        System.out.println("Array in descending order:");
+        for (int i = arr.length - 1; i >= 0; i--) { // Printing in reverse order
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+
+
