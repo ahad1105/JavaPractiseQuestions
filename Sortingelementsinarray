@@ -11,3 +11,19 @@ public class SortingExample {
         System.out.println("After sorting: " + Arrays.toString(arr));
     }
 }
+
+
+import java.util.Arrays;
+
+public class SortingExample {
+    public static void main(String[] args) {
+        int[] arr = {30, 50, 20, 10, 60};
+
+        System.out.println("Before sorting: " + Arrays.toString(arr));
+
+        Arrays.ParallelSort(arr); // Sorts in ascending order
+
+        System.out.println("After sorting: " + Arrays.toString(arr));
+    }
+}
+
